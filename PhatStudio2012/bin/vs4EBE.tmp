@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PhatStudio2012</name>
+    </assembly>
+    <members>
+        <member name="F:PhatStudio.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.AboutBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.AboutBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.AutoUpdate.CheckForUpdateIfNecessary">
+            <summary>
+            Checks the product website to see if a new version is available
+            </summary>
+        </member>
+        <member name="M:PhatStudio.AutoUpdate.DownloadDataCompleted(System.Object,System.Net.DownloadDataCompletedEventArgs)">
+            <summary>
+            Called when product update data is downloaded
+            </summary>
+        </member>
+        <member name="F:PhatStudio.ConfigDlg.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.ConfigDlg.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PhatStudio.ConfigDlg.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PhatStudio2012.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+            <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
+            <param term='application'>Root object of the host application.</param>
+            <param term='connectMode'>Describes how the Add-in is being loaded.</param>
+            <param term='addInInst'>Object representing this Add-in.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:PhatStudio2012.Connect.RegisterForEvents">
+            <summary>
+            Registers for all events we need to handle
+            </summary>
+        </member>
+        <member name="M:PhatStudio2012.Connect.RegisterCommand(Microsoft.VisualStudio.CommandBars.CommandBarPopup,System.String,System.String,System.String)">
+            <summary>
+            Registers Visual Studio command.  Returns true if this is a new command, false if it already existed.
+            </summary>
+        </member>
+        <member name="M:PhatStudio2012.Connect.Exec(System.String,EnvDTE.vsCommandExecOption,System.Object@,System.Object@,System.Boolean@)">
+            <summary>Implements the Exec method of the IDTCommandTarget interface. This is called when the command is invoked.</summary>
+            <param term='commandName'>The name of the command to execute.</param>
+            <param term='executeOption'>Describes how the command should be run.</param>
+            <param term='varIn'>Parameters passed from the caller to the command handler.</param>
+            <param term='varOut'>Parameters passed from the command handler to the caller.</param>
+            <param term='handled'>Informs the caller if the command was handled or not.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="M:PhatStudio2012.Connect.QueryStatus(System.String,EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
+            <summary>Implements the QueryStatus method of the IDTCommandTarget interface. This is called when the command's availability is updated</summary>
+            <param term='commandName'>The name of the command to determine state for.</param>
+            <param term='neededText'>Text that is needed for the command.</param>
+            <param term='status'>The state of the command in the user interface.</param>
+            <param term='commandText'>Text requested by the neededText parameter.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="M:PhatStudio2012.Connect.PromptForKeyBinding">
+            <summary>
+            Asks user if we should bind FileOpen to default key.  (For first run only.)
+            </summary>
+        </member>
+        <member name="M:PhatStudio2012.Connect.CreateToolWindow">
+            <summary>
+            Creates a tool window for our Explorer window
+            </summary>
+        </member>
+        <member name="M:PhatStudio2012.Connect.ParseSolutionFiles">
+            <summary>
+            Enumerate and index all files in current solution
+            </summary>
+        </member>
+        <member name="M:PhatStudio2012.Connect.AddProjectItems(EnvDTE.ProjectItems)">
+            <summary>
+            Adds all ProjectItems in the specified collection
+            </summary>
+        </member>
+        <member name="M:PhatStudio2012.Connect.AddProjectItemFiles(EnvDTE.ProjectItem)">
+            <summary>
+            Adds all the files for a project item
+            </summary>
+        </member>
+        <member name="M:PhatStudio2012.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
+            <summary>Implements the OnDisconnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being unloaded.</summary>
+            <param term='disconnectMode'>Describes how the Add-in is being unloaded.</param>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:PhatStudio2012.Connect.OnAddInsUpdate(System.Array@)">
+            <summary>Implements the OnAddInsUpdate method of the IDTExtensibility2 interface. Receives notification when the collection of Add-ins has changed.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />		
+        </member>
+        <member name="M:PhatStudio2012.Connect.OnStartupComplete(System.Array@)">
+            <summary>Implements the OnStartupComplete method of the IDTExtensibility2 interface. Receives notification that the host application has completed loading.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:PhatStudio2012.Connect.OnBeginShutdown(System.Array@)">
+            <summary>Implements the OnBeginShutdown method of the IDTExtensibility2 interface. Receives notification that the host application is being unloaded.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="T:PhatStudio.ImageToPictureDispConverter">
+            <summary>
+            Stupid little class to translate icon from a managed Image to an OLE IPictureDisp to hand off to set the tool window tab icon.
+            </summary>
+        </member>
+        <member name="T:PhatStudio.IconExtractor">
+            <summary>Used to create a new AboutIconData in PhatStudio.AddIn</summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.Init">
+            <summary>
+            Initializer
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.AddFile(System.String)">
+            <summary>
+            Adds a filepath to the index
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:PhatStudio.FileIndex.RemoveAll">
+            <summary>
+            Removes all files from the index
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.ScheduleFileListChangedEvent">
+            <summary>
+            Schedules a FileListChanged event to fire in the future, and cancels any pending events.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Called when timer elapses
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.OnFileListChanged">
+            <summary>
+            Causes a FileListChanged event to be fired
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.FindSubstringMatches(System.String)">
+            <summary>
+            Returns list of all filepaths that contain the specified substring
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.AddFileToSearchResults(PhatStudio.FileIndexData,System.Int32,System.Boolean,System.Collections.Generic.Dictionary{System.String,PhatStudio.FileMatch}@)">
+            <summary>
+            Adds specified file to search results
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileIndex.AddAllFilesInSubtreeToSearchResults(PhatStudio.DirIndexData,System.Int32,System.Collections.Generic.Dictionary{System.String,PhatStudio.FileMatch}@)">
+            <summary>
+            Adds all the files in this directory, and all files in all subdirectories, to the search results
+            </summary>
+        </member>
+        <member name="T:PhatStudio.FileMatch">
+            <summary>
+            Class to hold an individual search result from a substring match on a set of files
+            </summary>
+        </member>
+        <member name="M:PhatStudio.FileMatch.Compare(PhatStudio.FileMatch)">
+            <summary>
+            Compares the metadata for two matches against substring.  Returns -1 if this object has a more relevant
+            match, 0 if they're the same, or 1 if the other object has a more relevant match
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:PhatStudio.IndexData" -->
+        <member name="T:PhatStudio.DirIndexData">
+            <summary>
+            Index data about a directory
+            </summary>
+        </member>
+        <member name="T:PhatStudio.FileIndexData">
+            <summary>
+            Index data about a file
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.Init(EnvDTE80.DTE2,PhatStudio.FileIndex,System.Boolean)">
+            <summary>
+            Initializer
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.TextBoxFilter_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when the text in the search string text box changes
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.GridView_CellDoubleClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Called when a file in the list is double-clicked
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.TextBoxFilter_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Called when a key is pressed in the text box
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.GridView_CellFormatting(System.Object,System.Windows.Forms.DataGridViewCellFormattingEventArgs)">
+            <summary>
+            Called when a grid view cell is being formatted
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.NewVersionHyperlink_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            Called when the "new version available" hyperlink is clicked
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.CloseBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the close button is pressed
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.SetFilter(System.String)">
+            <summary>
+            Sets the search string filter and updates the filename search results
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.OpenSelectedFiles">
+            <summary>
+            Opens the file in the IDE corresponding to the currently selected grid view item
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.Close">
+            <summary>
+            Closes the window we're in.  Valid only when running inside modal dialog.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.ShouldForwardKeyEvent(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Returns if key event should be forwarded from text box to grid view
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.OnFileListChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when the file list changes
+            </summary>
+        </member>
+        <member name="F:PhatStudio.OpenFileControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PhatStudio.OpenFileControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PhatStudio.CustomDataGridView">
+            <summary>
+            Inherited class from DataGridView to expose a member to be able to send it key events
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileDlg.#ctor">
+            <summary>
+            Contructor
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileDlg.Init(EnvDTE80.DTE2,PhatStudio.FileIndex)">
+            <summary>
+            Initializer
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileDlg.OpenFileDlg_Load(System.Object,System.EventArgs)">
+            <summary>
+            Called when the dialog loads
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileDlg.OpenFileDlg_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Called when the dialog closes
+            </summary>
+        </member>
+        <member name="F:PhatStudio.OpenFileDlg.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.OpenFileDlg.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PhatStudio.OpenFileDlg.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PhatStudio.PhatStudio">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PhatStudio.PhatStudio.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PhatStudio.PhatStudio.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:PhatStudio.PhatStudio._1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:PhatStudio2012.PhatStudio">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.PhatStudio.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.PhatStudio.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.PhatStudio._1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:PhatStudio2012.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.AppIcon">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.arrow">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.cross">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.DeleteHS">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.NewCardHS">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.NewCardHS2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PhatStudio2012.Properties.Resources.ok">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrie.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrie.AddString(System.String)">
+            <summary>
+            Adds a string to the trie to be indexed
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrie.FindSubstringMatches(System.String)">
+            <summary>
+            Returns all matches for specified substring
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrie.AddSuffix(System.String,System.Int32)">
+            <summary>
+            Adds suffix of specified value, starting at specified start index
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrie.Render">
+            <summary>
+            Render the entire trie: for debugging purposes
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrie.RenderNode(PhatStudio.SuffixTrieNode,System.String)">
+            <summary>
+            Render a node: for debugging purposes
+            </summary>
+        </member>
+        <member name="T:PhatStudio.SuffixTrieNode">
+            <summary>
+            A node in a suffix trie
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrieNode.#ctor(System.Char)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrieNode.GetOrCreateChild(System.Char,System.String,System.Int32)">
+            <summary>
+            Returns a child node with the specified character, containing a match with specified value and start index.  
+            Returns an existing node if there is one, otherwise it creates it.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SuffixTrieNode.FindChild(System.Char)">
+            <summary>
+            Returns child node matching specified character, or null if it does not exist.
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SwitchFile.ReloadDictionary">
+            <summary>
+            Read in strings of the form "LEFT|RIGHT" and add them to the config dialogs dictionary
+            This code exists almost identically in ConfigDlg
+            It is called from Settings.OnLoaded/OnSaving
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SwitchFile.GetExtensionExt(System.String)">
+            <summary>
+            returns string in lower case after first point
+            Path.GetExtension() returns the string after the last point including the point
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SwitchFile.ChangeExtensionExt(System.String,System.String)">
+            <summary>
+            Change string after the first point
+            Path.ChangeExtension() changes the string after the last point
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SwitchFile.SwitchPossible(EnvDTE.Document)">
+            <summary>
+            See if there is a related file we can switch to
+            
+            We are happy if the file has a supported ending
+            There's no check whether there are any related files we can switch to or not
+            </summary>
+        </member>
+        <member name="M:PhatStudio.SwitchFile.SwitchToRelated(EnvDTE.Document)">
+            <summary>
+            Find corresponding file and open it
+            
+            First, get the list of possible file endings
+            Then, look in same folder
+            Then, look in project folder and use the first match
+            </summary>
+        </member>
+        <member name="T:PhatStudio.TextBoxEx">
+            <summary>
+            When a TextBoxEx receives focus, 
+            all text in the textbox is selected.
+            </summary>
+        </member>
+    </members>
+</doc>
