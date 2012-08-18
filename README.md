@@ -11,3 +11,8 @@ Build it yourself
 -----------------
 As I discovered there are a few dependencies if you want to build the MSI installer yourself.  You'll need to download [Blinksync](http://blinksync.sourceforge.net/) as well as [Inno](http://www.jrsoftware.org/isinfo.php/).  The `/setup` folder contains the `phatstudio.iss` file.  You may need to modify the `BuildSetupPackages.cmd` file as well, depending on where you install the dependencies.
 
+License
+-------
+
+I guess the original version is GPL.  I'm not sure what that means in terms of my obligations.  Hopefully having the source here is sufficient.  I believe the GPL license is viral so I presume this fork is also GPL?  If not, do whatever you want with it :)
+
