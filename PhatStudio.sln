@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5A12CE32-B2F9-4D49-B0C4-0FC7CBDCC487}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		PhatStudio.vsmdi = PhatStudio.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhatStudio", "PhatStudio.csproj", "{EB92AC7C-CFA8-4E71-A17F-977346311B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhatStudioTest", "PhatStudioTest\PhatStudioTest.csproj", "{4093DABC-D70B-44BD-AC5D-71695A5278C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41} = {EB92AC7C-CFA8-4E71-A17F-977346311B41}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PhatStudio.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EB92AC7C-CFA8-4E71-A17F-977346311B41}.Release|Win32.ActiveCfg = Release|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4093DABC-D70B-44BD-AC5D-71695A5278C2}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		PhatStudioExplorerVisible = 0
+	EndGlobalSection
+EndGlobal

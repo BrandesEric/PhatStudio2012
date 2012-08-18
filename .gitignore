@@ -1,0 +1,9 @@
+Documentation/
+bin/
+obj/
+logs/
+eric/
+*.suo
+*.user
+.sass-cache/
+toDelete/
